@@ -44,7 +44,6 @@ class PDFValidatorApp(QWidget):
             except requests.exceptions.ConnectionError:
                 QMessageBox.critical(self, "Ошибка", "Не удалось подключиться к серверу")
             
-# Создание и запуск приложения
 def main():
     app = QApplication(sys.argv)
     ex = PDFValidatorApp()
